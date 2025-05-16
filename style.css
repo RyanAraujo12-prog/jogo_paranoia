@@ -1,0 +1,152 @@
+/* Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header */
+.game-header {
+  text-align: center;
+  background-color: #0a0a0a;
+  padding: 4rem 1rem 2rem;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.header-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px #8e44ad88;
+}
+
+.game-header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: #c964f7;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.game-header p {
+  font-size: 1.2rem;
+  color: #e1b0ff;
+  font-weight: 500;
+}
+
+/* Main content */
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.game-info section {
+  margin-bottom: 3rem;
+}
+
+.game-info h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #c964f7;
+  margin-bottom: 1rem;
+  border-left: 4px solid #c964f7;
+  padding-left: 0.5rem;
+}
+
+.game-info p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* Linha divisória */
+hr {
+  border: none;
+  border-top: 2px solid #c964f7;
+  margin: 3rem 0;
+  opacity: 0.2;
+}
+
+/* Personagens Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #151515;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #c964f710;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #222;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #c964f755;
+}
+
+.card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #c964f7;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.qr-section p {
+  font-size: 1.1rem;
+  color: #c964f7;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.qr-section img {
+  width: 140px;
+  height: auto;
+  border: 2px solid #c964f7;
+  border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .game-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .game-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .game-info p,
+  .card p {
+    font-size: 1rem;
+  }
+}
