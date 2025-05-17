@@ -10,6 +10,7 @@ body {
   background-color: #0a0a0a;
   color: #f0f0f0;
   line-height: 1.6;
+  cursor: url('https://cur.cursors-4u.net/mechanics/mec-1/mec16.cur'), auto;
 }
 
 /* Header */
@@ -150,3 +151,48 @@ footer {
     font-size: 1rem;
   }
 }
+
+h1 {
+  color: #a64cff; /* Roxo neon escuro */
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4rem;
+  position: relative;
+  animation: glitch 1.2s infinite;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow:
+      2px 2px #3d0073,
+      -2px -2px #12002f;
+  }
+  20% {
+    text-shadow:
+      -2px -1px #ff1aff,
+      2px 1px #2c004e;
+  }
+  40% {
+    text-shadow:
+      1px -1px #8b00ff,
+      -1px 2px #2d0a40;
+  }
+  60% {
+    text-shadow:
+      -1px 1px #6600cc,
+      1px -2px #ff009d;
+  }
+  80% {
+    text-shadow:
+      2px -2px #330066,
+      -2px 2px #ff33ff;
+  }
+  100% {
+    text-shadow:
+      0 0 4px #2d0a40,
+      0 0 8px #a64cff;
+  }
+}
+
+
